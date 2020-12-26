@@ -1,0 +1,19 @@
+
+1. CSV File support
+2. Certificate ID to be pulled from CSV File
+3. X,Y positions
+5. BOX option to write text
+
+
+
+drawBoxes.py 4571.jpg
+
+
+
+4571.jpg config
+
+text1 x1 x2 y1 y2
+text2
+
+
+5471.jpg config
