@@ -28,20 +28,22 @@ else:
 img = Image.open(finalCerticate)
 draw = ImageDraw.Draw(img)
 W, H = img.size
+boxWidth = int(W / 32)
+boxHeight = int(H / 32)
 
 # Plot Horizontal and Vertical lines
-for x in range(0, W, 30):
+for x in range(0, W, boxWidth):
   draw.line((x, 0, x, H), fill = "red", width = 2)
-for x in range(0, H, 30):
+for x in range(0, H, boxHeight):
   draw.line((0, x, W, x), fill = "red", width = 2)
 
 # Expand Image and plot numbers on XY axis
-img = ImageOps.expand(img, border = 30, fill = 128)
+img = ImageOps.expand(img, border = boxWidth, fill = 128)
 draw = ImageDraw.Draw(img)
 
-for x in range(30 , W, 30):
-    draw.text(xy=(x, 18),text='{}'.format(x - 30),fill=(0,0,0))
-for x in range(30 , H, 30):
-    draw.text(xy=(10, x),text='{}'.format(x - 30),fill=(0,0,0))
+for x in range(boxWidth , W, boxWidth):
+    draw.text(xy=(x, boxHeight),text='{}'.format(x - boxWidth),fill=(0,0,0))
+for x in range(boxHeight , H, boxHeight):
+    draw.text(xy=(boxWidth - 30, x),text='{}'.format(x - boxHeight),fill=(0,0,0))
 
 img.save('/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/plotCertificates/plot_{}.jpg'.format(certificateId))

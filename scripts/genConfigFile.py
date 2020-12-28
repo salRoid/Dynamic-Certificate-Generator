@@ -13,18 +13,18 @@ data = {}
 data['properties'] = []
 for i in range(0, totalTextFields, 1):
     textfield = "text " + str(i+1)
-    identifier = raw_input("Enter unique Identifier for" + textfield + ": " )
-    x1, x2, y1, y2 = raw_input("Enter x1, x2, y1, y2 for " + textfield + ": ").split(" ")
-    fontName, fontSize = raw_input("Enter font name and font size for " + textfield + ": ").split(" ")
+    #identifier = raw_input("Enter unique Identifier for" + textfield + ": " )
+    #x1, x2, y1, y2 = raw_input("Enter x1, x2, y1, y2 for " + textfield + ": ").split(" ")
+    #fontName, fontSize = raw_input("Enter font name and font size for " + textfield + ": ").split(" ")
 
     data['properties'].append({
-    'name': identifier,
-    'x1': x1,
-    'y1' : y1,
-    'x2': x2,
-    'y2': y2,
-    'fontSize': fontSize,
-    'fontName' : fontName
+    'name': "",
+    'x1': "",
+    'y1' : "",
+    'x2': "",
+    'y2': "",
+    'fontSize': "",
+    'fontName' : ""
 })
 # create JSON object
 json_object = json.dumps(data, indent = 4, sort_keys=True) 

@@ -1,0 +1,22 @@
+{
+    "properties": [
+        {
+            "fontName": "cac_champagne.ttf", 
+            "fontSize": "108", 
+            "name": "Name", 
+            "x1": "870", 
+            "x2": "2490", 
+            "y1": "1350", 
+            "y2": "1350"
+        }, 
+        {
+            "fontName": "cac_champagne.ttf", 
+            "fontSize": "48", 
+            "name": "Date", 
+            "x1": "630", 
+            "x2": "1140", 
+            "y1": "1960", 
+            "y2": "1960"
+        }
+    ]
+}
