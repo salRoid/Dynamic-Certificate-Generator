@@ -1,25 +1,22 @@
 import sys
 import json
 
-# Interface Value for specific 
+# TODO Validate Plot Certificate.jpg exists if not ask to run
+# TODO Validate both the arguments
 
 certificateId  =  sys.argv[1]
 totalTextFields = sys.argv[2]
-
-# TODO Validate both the arguments
-
 totalTextFields = int(totalTextFields)
-print (certificateId)
-print (totalTextFields)
 
+# Create Dictionary for JSON config file
 data = {}
 data['properties'] = []
-
 for i in range(0, totalTextFields, 1):
     textfield = "text " + str(i+1)
     identifier = raw_input("Enter unique Identifier for" + textfield + ": " )
-    x1, y1, x2, y2 = raw_input("Enter x, y, x1, y1 for " + textfield + ": ").split(" ")
+    x1, x2, y1, y2 = raw_input("Enter x1, x2, y1, y2 for " + textfield + ": ").split(" ")
     fontName, fontSize = raw_input("Enter font name and font size for " + textfield + ": ").split(" ")
+
     data['properties'].append({
     'name': identifier,
     'x1': x1,
@@ -29,7 +26,10 @@ for i in range(0, totalTextFields, 1):
     'fontSize': fontSize,
     'fontName' : fontName
 })
-
+# create JSON object
 json_object = json.dumps(data, indent = 4) 
-with open('/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/Configs/data.json', 'w') as outfile:
+
+# create Certificate file name .json
+pathConfig = '/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/Configs/' + certificateId +  '.json'
+with open(pathConfig, 'w') as outfile:
     outfile.write(json_object)

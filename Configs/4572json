@@ -1,20 +1,20 @@
 {
     "properties": [
         {
-            "fontName": "abc.ttf", 
+            "fontName": "Roboto.ttf", 
             "y2": "1350", 
-            "name": "name", 
+            "name": "Name", 
             "x2": "2790", 
             "fontSize": "96", 
-            "y1": "1350", 
-            "x1": "1200"
+            "y1": "1200", 
+            "x1": "1350"
         }, 
         {
-            "fontName": "abc.ttf", 
+            "fontName": "roboto.ttf", 
             "y2": "2060", 
             "name": "date", 
             "x2": "1620", 
-            "fontSize": "96", 
+            "fontSize": "45", 
             "y1": "2060", 
             "x1": "1050"
         }
