@@ -1,0 +1,22 @@
+{
+    "properties": [
+        {
+            "fontName": "abc.ttf", 
+            "y2": "1350", 
+            "name": "name", 
+            "x2": "2790", 
+            "fontSize": "96", 
+            "y1": "1350", 
+            "x1": "1200"
+        }, 
+        {
+            "fontName": "abc.ttf", 
+            "y2": "2060", 
+            "name": "date", 
+            "x2": "1620", 
+            "fontSize": "96", 
+            "y1": "2060", 
+            "x1": "1050"
+        }
+    ]
+}
