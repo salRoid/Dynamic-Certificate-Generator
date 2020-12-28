@@ -2,12 +2,12 @@
     "properties": [
         {
             "fontName": "GreatVibes-Regular.ttf", 
-            "y2": "630", 
-            "name": "Name", 
-            "x2": "1140", 
             "fontSize": "96", 
-            "y1": "510", 
-            "x1": "540"
+            "name": "Name", 
+            "x1": "570", 
+            "x2": "1110", 
+            "y1": "600", 
+            "y2": "600"
         }
     ]
 }

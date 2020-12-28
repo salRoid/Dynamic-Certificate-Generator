@@ -27,7 +27,7 @@ for i in range(0, totalTextFields, 1):
     'fontName' : fontName
 })
 # create JSON object
-json_object = json.dumps(data, indent = 4) 
+json_object = json.dumps(data, indent = 4, sort_keys=True) 
 
 # create Certificate file name .json
 pathConfig = '/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/Configs/' + certificateId +  '.json'

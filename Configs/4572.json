@@ -1,0 +1,22 @@
+{
+    "properties": [
+        {
+            "fontName": "GreatVibes-Regular.ttf", 
+            "fontSize": "96", 
+            "name": "Name", 
+            "x1": "1200", 
+            "x2": "2790", 
+            "y1": "1350", 
+            "y2": "1350"
+        }, 
+        {
+            "fontName": "GreatVibes-Regular.ttf", 
+            "fontSize": "44", 
+            "name": "Date", 
+            "x1": "1050", 
+            "x2": "1620", 
+            "y1": "2060", 
+            "y2": "2060"
+        }
+    ]
+}
