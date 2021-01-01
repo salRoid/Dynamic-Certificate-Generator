@@ -16,7 +16,7 @@ path = '/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/'
 
 # Single or Bulk
 if (generationType == "Single") :    
-    certificateId = raw_input("Enter certificate Id: ")
+    certificateId = input("Enter certificate Id: ")
     pathCertificate = path + 'certificates/' + certificateId + '.jpg'
     pathCertificateConfig = path + 'Configs/' + certificateId + '.json'
     certificateName = ''
@@ -27,7 +27,7 @@ if (generationType == "Single") :
     with open(pathCertificateConfig) as json_file:
         data = json.load(json_file)
         for p in data['properties']:
-            value = raw_input("Enter " + str(p['name']) + ": ")
+            value = input("Enter " + str(p['name']) + ": ")
             if (i == 0) :
                 certificateName = value.replace(" ", "")
             x1 = int (p['x1'])
