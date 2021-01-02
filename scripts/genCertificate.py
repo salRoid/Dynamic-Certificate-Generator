@@ -4,13 +4,6 @@ import os
 import sys
 import json
 
-# TODO Validate certificate is present or not
-# TODO Validate config file is present or not
-# TODO Custom fonts access 
-# TODO First Element is primary key
-# TODO Certificate Naming Convention
-# TODO Overflowing text shortening
-
 generationType  =  sys.argv[1]
 path = '/Users/salroid/Documents/GitHub/Dynamic-Certificate-Generator/'
 
